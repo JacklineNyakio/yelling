@@ -1,0 +1,16 @@
+#Compile Results
+**/target
+project/project
+project/target
+
+#IntelliJ Files
+.idea
+
+
+*.iml
+*.log
+
+.swp
+
+#Mac Files
+.DS_Store
