@@ -31,7 +31,7 @@ object KafkaStreamingApp extends App with LazyLogging {
 //  Processor node 2 --> Upper case processor
     val upperCased: KStream[String, String] = yellingStreamSource.mapValues[String](
       new ValueMapper[String, String]() {
-        override def apply(value: String) = {
+        override def apply(value: String) : String = {
           value.toUpperCase
         }
     }
